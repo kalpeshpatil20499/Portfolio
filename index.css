@@ -1,0 +1,311 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+body{
+    font-family:'Roboto' sans-serif;
+    background-color:  #413b2f;
+    color:rgb(242, 237, 237);
+    
+}
+
+  /* Apply css on nav bar */
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:25px;
+    background-color: #2b5380;
+    position:fixed;
+    top:0%;
+    width:100%;
+    
+}
+ul{
+    display: flex;
+    align-items: center;
+    
+}
+ul li{
+    list-style:none;
+}
+ul li a{
+    text-decoration:none;
+    color:white;
+    font-size: 25px;
+    margin-inline:22px;
+}
+ul li a:hover{
+    color:rgb(7, 12, 5);
+    border-bottom: 2px solid rgb(250, 66, 4);
+    border-style: double;
+}
+#bar{
+    display:none;
+}
+.logo{
+    font-size:40px;
+}
+
+/* Developer name apply animation effect (Mich Mich ) */
+.logo h1{
+    color: rgb(248, 245, 245);
+    animation: animate 1s linear infinite;
+    
+}
+@keyframes animate{
+0%{
+    color:rgb(10, 10, 10);
+    filter:blur(2px) hue-rotate(0 deg);
+}  
+30%,70%{
+    color:rgb(7, 246, 51);
+    filter:blur(2px) hue-rotate(360 deg);
+}  
+}
+.logo span{
+    color:rgb(247, 7, 63);
+}
+.logo p{
+    text-decoration: dashed;
+}
+
+  /* Home Page  Add photo and Text */
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:110px;
+    margin-left:300px;
+    margin-right:50;
+
+}
+.mainText h1{
+    font-size: 70px;
+    color:rgb(244, 243, 245);
+}
+.mainText h1 span{
+    color:rgb(252, 251, 251);
+}
+.mainText h3 {
+    font-size: 28px;
+    color:rgb(205, 249, 5);
+}
+.mainText p{
+    font-size:30px;
+    color:rgb(205, 249, 5);
+}
+.mainText button{
+    width:140px;
+    height:40px;
+    background-color:rgb(49, 155, 70);
+    font-size: 19px;
+    border:none;
+    margin-top: 24px;
+    color:rgb(238, 229, 229);
+}
+button:hover{
+    border:2px solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* About us */
+
+.head{
+    text-align:center;
+    color: rgb(25, 212, 212);
+    background-color: rgba(72, 17, 252, 0.252);
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(118, 120, 69);
+    padding: 100px;
+}
+
+.about img{
+    width:130px;
+    border-radius: 170px;
+    border-inline:80px;
+    border:8px solid rgb(221, 230, 221);
+    margin-inline:55px;
+}
+.aboutText p{
+    margin-top: 22px;
+    color: aqua;
+    font-size:20px;
+}
+.aboutText h2 span{
+    color:rgb(6, 179, 247);
+    align-items: center;
+}
+.aboutText p span{
+    color:rgb(252, 250, 250);
+}
+.aboutText i{
+    font-size:20px;
+    color:rgb(12, 242, 242);
+}
+
+/* apply css on cards */
+.service{
+     display: flex; 
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    padding:22px;
+    background-color:#2b5380;
+    margin-inline:20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card p{
+  margin-top:11px;
+}
+.card i{
+    font-size: 26px;
+}
+.card h3{
+    color:rgb(4, 251, 168);
+}  
+
+/* my project user interfaces */
+
+.mywork{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.Project_UI{
+    width:280px;
+    height: 310px;
+    background-color: rgb(97, 82, 82);
+    border-radius:7px;
+    margin-inline:20px;
+    padding:11px;
+}
+.Project_UI img{
+    width:100%;
+    height:200px;
+}
+.Project_UI p{
+ margin-top:11px;
+}
+.Project_UI a{
+    text-decoration:none ;
+     position: absolute;
+    margin-top:20px;
+    padding:6px 12px;
+    background-color: rgb(95, 32, 154);
+    color: white;
+}
+.Project_UI h3{
+    color:aqua;
+}
+
+
+/* contact */
+
+.contact{
+    width:300px;
+    padding: 30px;
+    align-items: center;
+    margin:auto;
+}
+.contact input{
+    width: 100%;
+    padding:10px;
+    align-items: center;
+    font-size: 17px;
+    border: 3px solid rgb(198, 241, 88);
+    background-color: rgb(248, 246, 244);
+    color: #2b5380;
+    margin-top: 3px;
+}
+.contact p{
+  margin-top: 30px;
+  color:rgb(247, 243, 243);
+}
+.contact button{
+    width:100px;
+    height: 28px;
+    font-size: 18px;
+    border:rgb(71, 253, 5);
+    border:2px solid red;
+    margin-top: 22px;
+    color:rgb(79, 235, 12);
+    
+}
+
+/* footer section */
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 55px;
+    margin-top: 66px;
+    background-color:rgb(133, 110, 110);
+}
+.text{
+    margin-top: 20px;
+}
+.text p{
+margin-top:12px;
+color:rgb(7, 7, 7);
+}
+@media screen and (max-width:1000px){
+    .main{
+        display: block;
+        text-align:center;
+        margin-top:155px;
+
+    }
+}
+@media screen and (max-width:800px){
+    ul{
+        display: none;
+    }
+    .showData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding:23px;
+        background-color: gray;
+        gap:20px;
+        border-radius:5px;
+        position:fixed;
+        top:75px;
+        right:3%;
+    }
+    #bar{
+        display: block;
+        font-size:25px;
+        cursor:pointer;
+    }
+}
+@media  screen and (max-width:550px) {
+    .mainText h1{
+        font-size:36px;
+    }
+    .mainText h3{
+        font-size:21px;
+    }
+    .mainText p{
+        font-size: 20px;
+    }
+    .main img{
+        margin-top: 90%;
+    }
+    .contact{
+        width:80%;
+    }
+    
+}
